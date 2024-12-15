@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- predefined validation regular expression -->
+
+        <!-- validate INDIAN mob.no. -->
+
+        <!-- <input type="text" name="phone" placeholder="+91-999-8888-777" pattern="\+91-[6-9]\d{2}-\d{4}-\d{3}" required>
+        <button type="submit">submit</button> <br> -->
+
+
+
+        <!-- validate US mob.no. -->
+
+        <!-- <input type="text" name="phone" placeholder="+(44)(20)1234 5678" pattern="\+\(44\)\(20\)\d{4}\s\d{4}" required>
+        <button type="submit">submit</button> -->
+
+
+
+        <!-- validate IFSC code -->
+        
+        <!-- <input type="text" name="code" placeholder="SBIN0000813" pattern="SBIN0\d{6}">
+        <button type="submit">submit</button> -->
+
+
+
+        <!-- validate code with only alpha numeric with 4 to 15 chars but special characters -->
+        
+        <!-- <input type="text" name="characters" placeholder="no special symbols" pattern="[^!@#$%&*]{4,15}">
+        <button type="submit">submit</button> -->
+
+
+
+        <!-- validate code with only alphabet with 4 to 15 chars but special characters not allowed. -->
+
+        <!-- <input type="text" name="alphabets" placeholder="only alphabets" pattern="[a-zA-Z]{4,15}" required>
+        <button type="submit">submit</button> -->
+
+
+
+        <!-- validate code for username starting with uppercase letters
+        and can be  4 to 15 chars but special characters not allowed. -->
+
+        <!-- <input type="text" name="username" placeholder="Ahjackwe" pattern="[A-Z][a-zA-Z]{3,14}" required>
+        <button type="submit">submit</button> -->
+
+
+
+        <!-- validate and allow only alpha numeric with _ and 
+        4 to 15 chars but Atleast one or many characters can be Uppercase. -->
+    
+        <!-- <input type="text" name="code" placeholder="njalndkaj_" pattern="(?=.*[A-Z])(?=.*[^!@#$%&])[a-zA-Z0-9]{3,14}" required>
+        <button type="submit">submit</button> -->
+
+        <input type="text" name="code" id="code" placeholder="Ajalndkaj_" pattern="^(?=.*[A-Z])[A-Za-z0-9_]{4,15}" required>
+            <button type="submit">Submit</button>
+
+
+        <!-- alpha numeric, underscore, 4 to 15 atleast one uppercase -->
+        <input type="text" name="txtTest" placeholder="alpha numeric, underscore, 4 to 15 atleast one uppercase"pattern="(?=.*[A-Z])\w{4,15}" required>
+        <button>Submit</button>
+
+
+
+
+        <input type="text" name="code" id="code" placeholder="Ajalndkaj_" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&_])[A-Za-z0-9]{1,11}" required>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

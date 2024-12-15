@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input{
+            margin: 12px;
+        }
+        div ol{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+            <h1>FORM-META-CHARACTERS</h1>
+            <div>
+                <ol>
+                <li><input type="text" name="txtcolor" placeholder="color|colour" pattern="colou?r">
+                    <button>submit</button><br></li>   
+                <li><input type="text" name="txtcolor" placeholder="color|colour|colouur|colouuur" pattern="colou*r" >
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="colour|colouur|colouuur|colouuuur" pattern="colou+r" >
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="buy|boy" pattern="b.y"> 
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="+91digitnumber" pattern="\+91"> 
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="+91 Digit Number" pattern="\+91\d{10}" title="Phone number should start with +91 followed by 10 digits">
+                    <button type="submit">Submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="sacchin@gmail.com" pattern="sacchin@gmail\.com">
+                    <button>submit</button><br></li>             
+                <li><input type="text" name="txtcolor" placeholder="red,blue,green" pattern="red|blue|green">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="this|that|the" pattern="th(is|at|e)">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="a,d,s" pattern="[^a,d,s]">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="any alphabet from a-z" pattern="[a-z]">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="any no. from 0-9" pattern="[0-9]">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder="any alphabet case and number" pattern="[a-z A-Z 0-9]">
+                    <button>submit</button><br></li>
+                <li><input type="text" name="txtcolor" placeholder=" no alphabet case and number" pattern="[^a-z A-Z 0-9]">
+                    <button>submit</button><br></li>
+                </ol>
+                
+            </div>
+    </form>
+</body>
+</html>

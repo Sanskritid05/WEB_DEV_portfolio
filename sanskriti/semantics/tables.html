@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        bodys{
+            margin-left: 300px;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        .Lost p{
+            background-color: gray;
+            color: white;  
+            /* border-radius: 13px; */
+            font-size: 15px;
+            width: 12px;
+            margin-right: 2px;
+            margin-left: 5px;
+            padding: 5px;
+            padding-right: 10px;
+            padding-left: 7px;
+            border-radius: 50px;
+        }
+        .Win p{
+            background-color: green;
+            color: white;
+            /* border-radius: 1200px; */
+            font-size: 15px;
+            width: 12px;
+            margin-left: 10px;
+            margin-right: 8px;
+            padding: 5px;
+            padding-left: 5px;
+            padding-right: 10px;
+            border-radius: 50px;
+        }
+        .No-result p{
+            background-color: red;
+            color: white;
+            /* border-radius: 100px; */
+            font-size: 15px;
+            width: 12px;
+            margin-left: 10px;
+            margin-right: 8px;
+            padding: 5px;
+            padding-left: 7px;
+            padding-right: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <table border="3px" align="center" bgcolor="lightcoral" cellspacing="5" cellpadding="10" >
+        <caption>
+            Asia Cup Point Table 2024 Group A
+        </caption>
+        <thead height="120" bgcolor="silver">
+           <th>Pos</th>
+           <th colspan="2">Teams</th>
+           <th>Matches</th>
+           <th>Won</th>
+           <th>Lost</th>
+           <th>Tied</th>
+           <th>NR</th>
+           <th>Points</th> 
+           <th>NRR</th> 
+           <th colspan="2">Series From</th>
+        </thead>
+        <tbody>
+            <tr>   
+                <td>1</td>
+                <td bgcolor="lightblue"><img src="public/images/pakistan.png"></td> 
+                <td bgcolor="lightblue">Pakistan</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td bgcolor="lightgreen">+4.760</td>
+                <span>
+                    <td class="Win"><p>W</p></td>
+                    <td class="No-result"><p>A</p></td>
+
+                </span>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td bgcolor="lightblue"><img src="public/images/india.png"></td> 
+                <td bgcolor="lightblue">India</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td bgcolor="lightgreen">+1.023</td>
+                <span>
+                    <td class="No-result"><p>A</p></td>
+                    <td class="Win"><p>W</p></td>
+                </span>
+            </tr><tr>
+                <td>3</td>
+                <td bgcolor="lightblue"><img src="public/images/nepal.png"></td> 
+                <td bgcolor="lightblue">Nepal</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td bgcolor="orange">-3.572</td>
+                <span>
+                    <td class="Lost"><p>L</p></td>
+                    <td class="Lost"><p>L</p></td>
+                </span>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="12" bgcolor="lightgreen">Pos::Position, Pld::Played, Pts::Points, NRR::Net Run Rate</td>
+            </tr> 
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="public/images/ckr-logo.ico">
+    <style>
+        .shade{
+            margin: -16px;
+            margin-right: -16px;
+            background-color: rgba(0,0,0,0.7);
+        }
+        body{
+            background-image: no-repeat;
+            font-size: 12px;
+
+        }
+        header{
+            position: sticky;
+            top: 0;  /* Sticks to the top of the page when you scroll down */
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            border: 1px solid #2e3830;
+            padding-bottom: 15px;
+            background-color: #2e3830;
+            color: #e6dbc9;
+           .brand-title{                                        /* brand-title */
+            display: block;
+            padding-left: 100px;
+            font-family: Arial;
+            font-weight: bolder;
+            padding-top: 12px;
+            .khakhi{
+                color:#c53211;
+            }
+            }
+            .navs{                                                /*navs */ 
+                padding-left: 50px;
+                padding-top: 20px;
+                font-size: 20px;
+                display: flex;
+                justify-content: space-between;
+                .navlings1{
+                    color:#c53211;
+                }
+                .navlings2{
+                    color: gold;
+                }
+                .blog-notify{
+                    font-size: 18px;
+                    font-weight: bolder;
+                    background-color: #c53211;
+                    color: #e6dbc9;
+                    border-radius: 50%;
+                    padding-left: 9px;
+                    padding-right: 9px;
+                    padding-top: 5px;
+                    padding-bottom: 3px;                   
+                }
+                    
+            }
+            .header-icons{   
+                font-size: 15px;                                           /*icons*/
+                padding-left: 200px;
+                padding-top: 20px;
+                padding-right: 20px;
+                display: flex;
+                justify-content: space-around;  
+                .bi-facebook{
+                    color: rgb(43, 84, 149);
+                }
+                .bi-youtube{
+                    color: red;
+                }
+                .bi-instagram{
+                    color: rgb(195, 29, 213);
+                }
+                .bi-telegram{
+                    color: lightseagreen
+                }
+            }
+        } 
+        footer{
+            padding-bottom: 40px;
+        }
+        .footer-mid{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;
+            background-color: #2e3830;
+            color: #e6dbc9;
+            padding: 5px;
+            padding-bottom: 10px;
+            padding-left: 120px;
+            h4,.mail{
+                color:#c53211;
+            }
+            .brand-title{
+                font-family: Arial;
+            }
+            .khakhi{
+                color: #e6dbc9;
+            }
+            .footer-icons{
+                display: flex;
+                justify-content: space-between;
+                padding-right: 150px;
+                .bi-youtube{
+                     color: red;
+                }
+                .bi-linkedin{
+                    color: rgb(62, 62, 176);
+                }
+            }
+        }
+        .social-bar{
+            background-color: rgba(170, 239, 239, 0.4);
+            cursor: pointer;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            list-style-type:none;
+            position: fixed;
+            right: 20px;
+            bottom: 150px;
+            margin: -20px;
+            font-size: 18px;
+            color: white;
+            border: 2px solid rgba(126, 44, 44, 0.3); 
+            
+            border-radius: 8px;
+        
+            .bi-facebook,.bi-instagram,.bi-linkedin,.bi-youtube,.bi-twitter-x{
+                justify-content: space-between;
+                padding-bottom: 20px;
+                color: #051f21;
+                border-right: 3px solid #051f21;
+                border-bottom: 3px solid #051f21;
+                border-left: 1px solid #051f21;
+                border-top: 1px solid #051f21;
+                border-radius: 30px;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }  
+            .bi-facebook:hover{
+            cursor: pointer;
+            background-color: rgb(101, 181, 218);
+            }.bi-youtube:hover{
+                cursor: pointer;
+                background-color: rgb(237, 137, 90);
+            }.bi-twitter-x:hover{
+                cursor: pointer;
+                background-color: rgb(68, 90, 101);
+            }.bi-instagram:hover{
+                cursor: pointer;
+                background-color: rgb(187, 101, 218);
+            }.bi-linkedin:hover{
+                cursor: pointer;
+                background-color: rgb(72, 68, 201);
+            }
+        }
+        .voguelet{
+        background-color: rgba(189, 147, 32, 0.6);
+        padding-top: 5px;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        color: white;
+        padding-left: 150px;
+            .special_wear{
+                color: #c53211;
+            }
+            li:hover{
+            cursor: pointer;
+            color: rgba(140, 189, 33);
+            }
+        }
+        .brand-name{
+            background-color: rgba(197, 12, 12, 0.7);
+            border-top: 25px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 25px solid rgba(0, 0, 0, 0.2);
+            text-align: center;
+            height: 190px;
+            padding-left: 600px;
+            padding-right: 600px;
+            padding-bottom: 20px;
+            font-size: 35px;
+            font-family: arial;
+            font-weight: bolder;
+        }
+        .customer-login,.customer-sign-up{
+            padding-top: -2px;
+            font-size: 25px;
+            text-align: right;
+            background-color: rgba(0, 0, 0, 0.2);
+            /* margin-left: 20px; */
+
+        }
+        ul{
+            list-style-type: circle;
+        }
+        main{
+            display: flex;
+        }
+        .home-page-image{
+            padding-left: 200px;
+        }
+        .cards{
+            color: black;
+            padding: 50px;
+            margin: 10px;
+            background-color: rgba(189, 147, 32, 0.6);
+            width: 300px;
+            height: 200px;
+            font-size: 12px;
+        }
+        .bi-star-fill{
+            color: goldenrod;
+            border: 50px solid balck;
+        }
+        .card-header{
+            margin-left: 90px;
+            margin-top: 10px;
+        }
+        .card-description-1{
+            color: rgb(214, 212, 212);
+            font-size: 15px;
+            font-weight: 900;
+
+        }
+        .card-description-2{
+            font-size: 15px;
+            font-weight: 800;
+        }
+        .card-footer{
+            padding-top: 50px;
+        }
+        .card-body{
+            clear: left;
+            padding-top: 20px;
+            font-weight: 600;
+            font-family: arial;
+            font-size: 10px;   
+        }
+        .offers-section{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .offers{
+            background-color: rgb(219, 211, 127);
+            padding: 20px;
+            margin: 20px;
+            width: 550px;
+            line-height: 20px;
+        }
+        .offers-body{
+            padding-top: 10px;
+            padding-left: 200px;
+        }
+        .bi-tags-fill{
+            color: green;
+        }
+        b a{
+            text-decoration: none;
+            color: rgb(60, 132, 156);
+        }
+        .hyperlink-para{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-size: 40px;
+            margin-bottom:200px ;
+            font-family: arial;
+            font-weight: bolder;
+            width: 310px;
+            height: 500px;
+        }
+        .hyperlink-para p{
+            padding-left: 500px;
+            border-radius: 20px;
+            list-style: none;
+            background-color: rgb(164, 161, 124);
+            margin-left: 2px;
+            width: 260px;
+            text-align: center;
+            padding: 20px;
+            padding-top: 70px;
+            margin-left: 16px;
+        }
+        p a{
+            text-decoration: none;
+            color: black;
+        }
+        p a:visited{
+            color: rgb(16, 80, 6);
+        }
+        p a:visited{
+            color: rgb(158, 49, 9);
+            background-color: rgb(88, 55, 55);
+        }
+        .fashion-arena{
+            background-color: #2e3830;
+        }
+    </style>
+</head>
+<body background="public/images/ckr-background.png">
+    <div class="shade">
+        <header>                
+            <!-- header-elements -->
+            <div class="brand-title">
+                <div>CLEAN</div>
+                <div class="khakhi">KHAKHI</div>
+                <div>RED</div>
+            </div>
+                <!-- navlings -->
+            <div class="navs">
+                <span class="navlings1">Home
+                    <span class="bi bi-search-heart"></span>
+                </span>
+                <span class="navlings">Page</span>
+                <span class="navlings">Catlog</span>
+                <span class="navlings2">Contact</span>
+                <span class="navlings">Blog 
+                <span class="blog-notify">2</span>
+            </div>
+            <!-- icons -->
+            <div class="header-icons">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter-x"></span>
+                <span class="bi bi bi-instagram"></span>
+                <span class="bi bi-telegram"></span>
+            </div>
+        </header>
+        <br>
+        <section>               
+            <!-- voguelet -->
+            <div class="voguelet">
+                <details class="men_wear" open>
+                    <summary>MEN WEAR</summary>   
+                        <ul>
+                            <li>SHIRTS</li>           
+                            <li>T-SHIRTS</li>           
+                            <li>BOTTOMS</li>           
+                            <li class="special_wear">WINTER WEARS</li> 
+                            <li>FOOTWEAR</li>
+                            <li>ETHENIC WEAR</li>
+                        </ul>                   
+                </details>
+                <details class="women_wear" open>
+                    <summary> WOMEN WEAR </summary>   
+                        <ul>
+                            <li>SHIRTS</li>           
+                            <li>T-SHIRTS</li>           
+                            <li>BOTTOMS</li>           
+                            <li class="special_wear">WINTER WEARS</li>  
+                            <li>FOOTWEAR</li>
+                            <li>ETHENIC WEAR</li>
+                        </ul>
+                </details>
+                <details class="kids_wear" open>
+                    <summary> KIDS WEAR </summary>   
+                        <ul>
+                            <li>GIRLS WEAR</li>
+                            <li>BOYS WEAR</li>
+                            <li class="special_wear">WINTER WEARS</li> 
+                            <li>FOOTWEAR</li>
+                            <li>ETHENIC WEAR</li>
+                            <li>INFANT COVER</li>    
+                        </ul>
+                </details>
+                <details class="khakhi_wear" open>
+                    <summary> KHAKHI WEAR </summary>   
+                        <ul>
+                            <li>SHIRTS</li>           
+                            <li>T-SHIRTS</li>                   
+                            <li>BOTTOMS</li> 
+                            <li>WOMEN ETHENIC WEAR</li>
+                            <li>MEN ETHENIC WEAR</li>
+                            <li class="special_wear">CLEAN KHAKHI RED VOGUE</li>
+                        </ul>
+            </div>
+        
+            <br><br><br>
+            <div class="brand-name">
+                <div style="color: white;">CLEAN</div>
+                <div>KHAKHI</div>
+                <div style="color: rgb(101, 68, 68);">RED</div>
+                <div style="font-size: 8px; text-align: center; font-weight: bolder;"><span>Welcome to the Authenticity of Diva!</span></div>
+            </div>
+            <div>
+                <span class="customer-login">Login</span>
+                <span class="customer-sign-up">Sign up</span>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- social-bar -->
+            <ol class="social-bar">             
+                <li class="bi bi-facebook"></li>
+                <li class="bi bi-youtube"></li>
+                <li class="bi bi-twitter-x"></li>
+                <li class="bi bi-instagram"></li>
+                <li class="bi bi-linkedin"></li>
+            </ol>
+        </section>
+        <!-- hyperlink -->
+        <span class="hyperlink-para">
+            <p> <a href="#womens">WOMENS EDITION</a>
+                <img src="public/images/hyperlink_women2.jpg" width="200" height="300">
+                
+            </p>
+            <p> <a href="#mens">MENS EDITION</a>
+                <img src="public/images/hyperlink_men2.jpg" width="200" height="300">
+            </p>
+            <p> <a href="#kids">KIDS EDITION</a>
+                <img src="public/images/hyperlink_kid.jpg" width="200" height="300">
+            </p>
+            <p> <a href="#kahkhi">KAHAKI EDITION</a>
+                <img src="public/images/khakhi_hl.jpg" width="200" height="300">
+            </p>
+        </span>
+
+        <!-- <span class="hyperlinks-para-content">
+            <div id="womens">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi hic incidunt provident, iure sed quaerat quam, alias quis molestiae vitae ipsam accusantium est quia. Ipsum possimus aliquid reiciendis iusto impedit?
+            </div>
+            <div id="mens">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi hic incidunt provident, iure sed quaerat quam, alias quis molestiae vitae ipsam accusantium est quia. Ipsum possimus aliquid reiciendis iusto impedit?
+            </div>
+            <div id="kids">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi hic incidunt provident, iure sed quaerat quam, alias quis molestiae vitae ipsam accusantium est quia. Ipsum possimus aliquid reiciendis iusto impedit?
+            </div>
+            <div id="khakhi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi hic incidunt provident, iure sed quaerat quam, alias quis molestiae vitae ipsam accusantium est quia. Ipsum possimus aliquid reiciendis iusto impedit?
+            </div>
+        </span> -->
+        <!-- women-header -->
+        <header class="fashion-arena">
+            <div class="women-header" id="womens">
+                <div>
+                    WOMEN FASHION ARENA
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+
+
+
+
+
+           
+        <!-- card1 -->
+        <main>
+           <div class="cards">
+                <img src="public/images/card-image-2.png" title="shoes" align="left" width="75px" height="75px">
+                <div class="card-header">
+                    <div class="card-description-1">Shoes</div>
+                    <div class="card-description-2">Low Top Sneakers</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span style="color: rgb(125, 122, 122);" class="bi bi-star-fill"></span>
+                        <span style="color: rgb(125, 122, 122);" class="bi bi-star-fill"></span>
+                    </div>
+                </div>  
+                <div class="card-body">
+                    From creepeth said moved given divide make multiply of him shall itself also above second doesn't unto created saying land herb sea midst night wherein.
+                </div>
+                <div class="card-footer">
+                    Logan Edwards, 01 Jun 2019
+                </div>
+            </div> 
+            <!-- card2 -->
+            <div class="cards">
+                <img src="public/images/card-image.png" title="dresses" align="left" width="75px" height="75px">
+                <div class="card-header">
+                    <div class="card-description-1">Dress</div>
+                    <div class="card-description-2">Cotton print dress</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>  
+                <div class="card-body">
+                    God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars, us you whales may, land, saw fill unto.    
+                </div>
+                <div class="card-footer">
+                    Jane Jefferson, 29 May 2019               
+                </div>
+            </div>
+             <!-- card3 -->
+             <div class="cards">
+                <img src="public/images/card-image-3.png" title="t-shirts" align="left" width="75px" height="75px">
+                <div class="card-header">
+                    <div class="card-description-1">T-shirts</div>
+                    <div class="card-description-2">Oversized print T-Shirts</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span style="color: rgb(125, 122, 122);" class="bi bi-star-fill"></span>
+                    </div>
+                </div>  
+                <div class="card-body">
+                    Fill his waters wherein signs likeness waters. Second light gathered appear sixth fourth, seasons behold creeping female.                </div>
+                <div class="card-footer">
+                    Darrel Baker, 18 May 2019
+                </div>
+            </div>
+            <!-- search-area -->
+            
+  
+  
+  
+  
+        </main>
+        <br><br><br>
+        
+
+        <footer>
+            <span class="footer-mid">
+                <span class="brand-title"><h4>CLEAN<br><span class="khakhi">KHAKHI</span> <br>RED</h4>
+
+                <!-- footer-icons -->
+
+                <div class="footer-icons">
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-youtube"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-twitter-x"></span>
+                        <span class="bi bi-linkedin"></span>
+                    </div> 
+                </span>   
+
+                <!-- footer-data -->
+
+                <span class="footer-data"><h4>SUPPORT</h4>
+                    <div>Contact Us</div>
+                    <div>FAQs</div>
+                    <div>Size Guide</div>
+                    <div>Shipping & Returns</div>
+                </span>
+                <span class="footer-data"><h4>SHOP</h4>
+                    <div>Men's Shopping</div>
+                    <div>Women's Shopping</div>
+                    <div>Kid's Shopping</div>
+                    <div>Discounts</div>
+                </span>
+                <span class="footer-data"><h4>COMPANY</h4>
+                    <div>Our Story</div>
+                    <div>Careers</div>
+                    <div>Terms & Conditions</div>
+                    <div>Privacy & Cookie Policy</div>
+                </span>
+                <span class="footer-data"><h4>CONTACT</h4>
+                    <div> <a href="1-202-555-0105">1-202-555-0105</a></div>
+                    <div><a href="1-202-555-0106">1-202-555-0106</a></div>
+                    <div class="mail">help@shopper.com</div>
+                </span>
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+

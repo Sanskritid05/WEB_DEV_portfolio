@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            width: 150px;
+            text-align: center;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .list,.disabled,.loading,.arrow{
+            border: 1px solid black; 
+            width: 5px;           
+            border-radius: 13px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 2px;
+            margin-right: 2px;
+            background-color: lightblue;
+            font-size: 15px;
+        }
+        li:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        .disabled:hover{
+            cursor: not-allowed;
+            background-color: red;
+        }
+        .loading:hover{
+            cursor: progress;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="arrow">&laquo;</li>
+            <li class="list">1</li>
+            <li class="disabled">2</li>
+            <li class="list">3</li>
+            <li class="list">4</li>
+            <li class="loading">5</li>    
+        <li class="arrow">&raquo;</li>
+    </ul>
+</body>
+</html>

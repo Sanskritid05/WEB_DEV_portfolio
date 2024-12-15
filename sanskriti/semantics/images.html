@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            font-family: arial;
+            font-size: 18px;
+            font-weight: bolder;
+            padding-left: 100px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .navs span{
+                padding-left: 8px;
+            }
+        button{
+            background-color: blue;
+            color: white;
+        }
+        .button{
+                padding-left: 200px;
+                border-radius:66px;
+            }
+        .bi-arrow-90deg-right{
+            color: white;
+        }
+        main{
+            font-family: arial;
+        }
+        main div{
+            padding-bottom: 20px;
+        }
+        .doc-btn{
+            background-color: gray;
+            color: black;
+        }
+        .welcome{
+            padding-top: 50px;
+        }
+        .section-content{
+            margin-left: 200px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="color: blue;">Landkit</div>
+        <div class="navs">
+            <span >Landings</span>
+            <span >Pages</span>
+            <span >Account</span>
+            <span >Documentation</span>
+        </div>
+        <div class="button"> 
+            <button style="font-size: 20px;">Buy now</button>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="welcome">
+                <img src="public/images/landkit.png" alt="landkit" width="500px" height="400px" align="right" >
+                <div class="section-content">
+                    <div class="title" style="font-size: 30px;">Welcome to <span style="color: blue;">Landkit.</span><br>Develop Anything</div>
+                    <div class="subtitle" style="color: gray;">Build a beautiful, modern website with flexible Bootstrap components<br>built from scratch.</div>
+                    <div>
+                        <span><button style="font-size: 20px;">View Pages<span class="bi bi-arrow-right-short"></span></button></span>
+                        <span><button class="doc-btn" style="font-size: 20px;">Documentation</button></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

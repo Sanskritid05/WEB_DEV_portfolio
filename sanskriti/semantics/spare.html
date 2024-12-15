@@ -1,0 +1,192 @@
+<!--DOCTYPE.html-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Linking bootstap icon cass file -->
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="shortcut icon" href="public/images/ckr-logo.ico">
+        <title> 
+            Fashion Store
+        </title>
+        
+        <!--Writing our own css code-->
+        <style type = "text/css">
+
+            body{
+                font-family: Impact;
+            }
+
+            header{                     /* header */
+                font-size: 15px;
+                border: solid  #e6dbc9;
+                background-color:#e6dbc9;
+                font-family: Impact;
+                margin: 14px;
+                padding: 14px;
+
+                /*Adjuating the Elements:: Inline*/
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+            }
+            div span{
+                font-weight:  bold;
+                font-size: 25 px;
+            }
+            #data{
+                margin-right: 10px;
+                font-weight: bold;
+
+            }
+            #icons{
+                margin-right: 5 px;
+                color: black
+            }
+            .count{
+                background-color: red;
+                color:white;  
+                /*Adjusting the dimesion for span element */
+                width:25px;
+                height:25px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 25px;
+                font-size: 18px;
+                
+            }
+            .flash-sale{
+                margin-top: 30px;
+                border: 1px solid black;
+                background-color:black;
+                color:rgb(227, 223, 223);
+                text-align: center;
+                padding: 25px;
+                font-family:'Impact';
+                font-size: 20px;
+            }
+            .bi-lightning-fill {
+                color: goldenrod;
+                
+            }
+            .brand-title{
+                font-weight: bold;
+                font-size: 25px;
+            }                               /* header_close*/
+
+            footer{
+            background-color: #2e3830;
+            color:white;
+            font-family: Impact;
+            padding:10px;
+
+
+            /*Arranging the columns through grid style */
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .footer-brand-name{
+            font-family: Impact;
+            font-size:20px;
+            padding:10px;
+        }
+        .data~span{
+            display: block;
+            font-size:8px;
+            color: grey;
+            font-family: Arial;
+            padding:2px;
+        }
+
+        aside span{
+            margin-right:8px;
+            
+        }
+        .data div{
+            padding-bottom: 10px;
+        }                                       /*footer_close*/
+
+        </style>
+    </head>
+    <body bgcolor="#c53211" >
+        <header>
+            <div>
+                <span class="brand-title">Shopper.</span>
+            </div>
+            <nav id ="data">
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blog</span>
+                <span>Docs</span>
+            </nav>
+            <nav id="icons">
+                <span class=" bi bi-search" ></span>
+                <span class=" bi bi-person" ></span>
+                <span class=" bi bi-heart" ></span>
+                <span class=" bi bi-cart3" >
+                    <span class="count">2</span>
+                </span>
+            </nav>
+        </header>
+        <div class="flash-sale">
+            <marquee>
+                <article>
+                    <span class="bi bi-lightning-fill"></span>
+                    <span>Happy holiday deals on Everything</span>
+                    <span class="bi bi-lightning-fill"></span>
+                </article>
+            </marquee>
+        </div>
+        <footer>
+            <div>
+                <div class="footer-brand-name">
+                    Shopper.
+                </div>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-linkedin"></span>
+                </aside>
+            </div>
+        
+            <div >
+                <div class="data">SUPPORT</div>
+                <span>Contact Us</span>
+                <span>FAQs</span>
+                <span>Size Guide</span>
+                <span>Shipping & Returns</span>
+            </div>
+        
+            <div >
+                <div class="data">Shop</div>
+                <span>Men's Shopping</span>
+                <span>Women's Shopping</span>
+                <span>Kids' Shopping</span>
+                <span>Discounts</span>
+            </div>
+        
+            <div >
+                <div class="data">Company</div>
+                <span>Our Story</span>
+                <span>Careers</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy & Cookie policy</span>
+            </div>
+        
+            <div >
+                <div class="data">Contact</div>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </div>
+        
+        </footer>
+    </body>
+</html>
+

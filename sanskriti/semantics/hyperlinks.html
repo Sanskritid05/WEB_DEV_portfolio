@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        section{
+            columns: 2;
+        }
+        header{
+            text-align: center;
+            height: 50px;
+            padding-top: 25px;
+            background-color: rgb(8, 69, 66);
+            color: white;
+            font-size: 30px;
+            font-family: Arial;
+            font-weight: bold;  
+        }
+        nav{
+            margin-top: 40px;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        nav a:active{
+            color: yellow;
+        } 
+        nav a:visited{
+            color: pink;
+        }
+
+        li{
+            padding: 10px;
+            list-style-type: none;
+            border: 1px solid black;
+            width: 120px;
+            margin-top: 10px;
+            background-color: rgb(60, 141, 136);
+            text-align: center;
+        }
+        .main-section{
+            overflow: auto;
+            /* display: grid;
+            grid-template-columns: repeat(4,1fr); */
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="bi bi-cart-dash">Fashion Store</span>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mensfashion">Mens Fashion</a></li>
+                <li><a href="#womensfashion">WomensFashion</a></li>
+                <li><a href="#kidsfashion">KidsFashion</a></li>
+            </ul>
+        </nav>
+        <main class="main-section">
+            <div>
+                <h3 id="home">Home</h3>
+                    <img src="public/images/appliance1.png">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim ea, laudantium nobis dolorum rerum officia vero incidunt, consequatur maiores iure! Corrupti laudantium corporis hic in expedita iste reiciendis error.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    </p>
+            </div>
+            <div>
+                <h3 id="mensfashion">MensFashion</h3>
+                <img src="public/images/men-half-sleeved-jacket.avif">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim ea, laudantium nobis dolorum rerum officia vero incidunt, consequatur maiores iure! Corrupti laudantium corporis hic in expedita iste reiciendis error.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    </p>
+            </div>
+            <div>
+                <h3 id="womensfashion">WomensFashion</h3>
+                <img src="public/images/lehenga1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim ea, laudantium nobis dolorum rerum officia vero incidunt, consequatur maiores iure! Corrupti laudantium corporis hic in expedita iste reiciendis error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                </p>
+            </div>
+            <div>
+                <h3 id="kidsfashion">KidsFashion</h3>
+                <img src="public/images/kurta 1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum enim ea, laudantium nobis dolorum rerum officia vero incidunt, consequatur maiores iure! Corrupti laudantium corporis hic in expedita iste reiciendis error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ipsam at. Architecto suscipit fugiat, aperiam hic praesentium laboriosam quia sunt quod, necessitatibus quasi ipsum mollitia. Velit dolor culpa suscipit id?
+                </p>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navs a{
+            text-decoration: none;
+        }
+        .navs span{
+            padding-left: 300px;
+        }
+        /* .main-section2{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+        } */
+
+        .cards{
+            padding: 30px;
+            border: 1px black solid;
+            height: 200px;
+            width: 300px;
+            box-shadow: 2px 2px 2px black;
+        }
+        .cards:hover{
+            background-color: green;
+        }
+        .cards:target{
+            background-color: brown;
+        }
+        .navs a:active{
+            color: gold;
+        }
+        .navs a:visited{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navs">
+        <span><a href="#html">Html</a></span>
+        <span><a href="#css">Css</a></span>
+        <span><a href="#js">JavaScript</a></span>
+    </nav>
+    <main class="main-section2">
+            <div class="cards" id="html">
+                <h1>HTML</h1>
+                <p>It is a Markup language</p>
+            </div>
+            <div class="cards" id="css">
+                <h1>CSS</h1>
+                <p>It is a Styling Language</p>
+            </div>
+            <div class="cards" id="js">
+                <h1>JavaScript</h1>
+                <p>It is a Scripting Language</p>
+            </div>
+    </main>
+</body>
+</html>

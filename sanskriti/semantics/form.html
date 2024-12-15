@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form novalidate> -->
+
+       <form style="border: 1px solid black; width: 500px; padding-left: 20px;" >
+        <dl>
+            <dt>Pan number
+                <dd> 
+                    <!-- <input type="text" value="FMIV247MS8" disabled name="pannumber"> -->
+                    <!-- <input type="text" value="FMIV247MS8" disabled name="pannumber"> -->
+                    <input type="text" name="pannumber" required  autofocus>
+                    
+                </dd>
+            </dt>
+            <dt>username
+                <dd>
+                    <!-- <input type="text" value="KOHLI" name="username"> -->
+                    <input type="text"name="username" maxlength="10">
+
+                </dd>
+            </dt>
+            <dt>gender
+                <dd>
+                    <input type="text"  name="gender" minlength="1">
+                </dd>
+            </dt>  
+        </dl>
+        <button>submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+    <form style="border: 1px solid black; width: 500px; padding-left: 200px; margin-top: 20px;">
+        <h1 style="color: rgb(132, 132, 234);">Google</h1>
+        <input type="text" id="search" size="50" list="options" >
+        <datalist id="options">
+            <option>HTML EXAMPLES</option>
+            <option>CSS EXAMPLES</option>
+            <option>JAVA EXAMPLES</option>
+            <option>HTML PROJECTS</option>
+            <option>CSS PROJECTS</option>
+            <option>JAVA PROJECTS</option>
+        </datalist>
+        <p></p>
+    </form>
+</body>
+</html>
