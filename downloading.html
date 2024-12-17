@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        border: 1px solid black;
+        width: 200px;
+        padding: 20px;
+    }
+    .error-field{
+        color: red;
+    }
+    label{
+        font-weight: bolder;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <form>
+        <!-- <progress min="0" max="100" value="80" name="downloading"></progress> -->
+
+
+        <h2><span class="bi bi-person-fill">User login</span></h2>
+
+        <div class="form-login">
+            <label for="username">Username</label><br>
+            <!-- associated with username -->
+            <input type="text" name="textusername" id="username">
+            <div class="error-field">invalid username</div>
+        </div>
+
+        <br>
+        
+        <div class="password">
+            <label for="password">Password</label><br>
+            <!-- associated with password -->
+
+            <input type="password" name="textpassword" id="password">
+            <div class="error-field">invalid password</div>
+        </div>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

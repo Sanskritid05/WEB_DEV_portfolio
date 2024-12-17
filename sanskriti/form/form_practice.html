@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" 
+        style="border: 1px solid black; 
+        width: 400px;
+        padding-left: 20px;
+        ">
+        <h1>REGISTRATION FORM</h1>
+        <!-- username -->
+        <p>
+            Firstname:
+            <input type="text" name="firstname"  maxlength="30" minlength="5" autofocus required>
+            <button type="submit">Submit</button>
+        </p>
+        <p>
+            Lastname:
+            <input type="text" name="lastname" maxlength="30" minlength="5"  autofocus required>
+            <button type="submit">Submit</button>
+        </p>
+        <p>
+            Age:
+            <input type="number" name="age" maxlength="3"  autofocus required>
+            <button type="submit">Submit</button>
+        </p>
+        <p>
+            DOB:
+            <input type="date" name="Date_of_birth" min="2024-12-15" max="2025-01-01" autofocus required>
+            <button type="submit">Submit</button>
+        </p>
+        <p>
+            Gender:
+            <input type="text" name="Gender" maxlength="1" autofocus required>
+            <button type="submit">Submit</button>
+        </p>
+        <p>Select Language
+            <input type="text" name="Languages" id="selection" list="option" autofocus required>
+            <datalist id="option">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVA</option>
+                <option>JAVASCRIPT</option>
+                <option>PROGRAMMING</option>
+            </datalist>
+            <button type="submit">Submit</button>
+        
+        
+        
+        </p>
+    </form>
+</body>
+</html>
