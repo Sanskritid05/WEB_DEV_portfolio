@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    input+div{
+        display: none;
+    }
+    input:focus+div{
+        color: goldenrod;
+        display: block;
+    }
+</style>
+<body class="container-fluid">
+    <dl>
+        <dt class="ms-2">Username</dt>
+        <input type="text" focus placeholder="Enter your name" class="ms-2">
+        <div>
+            <span class="bi bi-info-circle"> &nbspEnter name in block letters</span>
+        </div>
+    </dl>
+</body>
+</html>
